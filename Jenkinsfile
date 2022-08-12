@@ -5,8 +5,7 @@ helloMundo()
 }
 
 stage("Test") {
-
- 
- sh "mvn clean test"
- 
+node {
+  sh "mvn clean test"
+    }
 }
