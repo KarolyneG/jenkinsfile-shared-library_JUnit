@@ -4,7 +4,8 @@ echo 'Hello world'
 helloMundo()
 }
 
-stage("PU_SPOCK") {
+stage("Test") {
 
-             sh "mvn clean test"
+  // sh "mvn clean test"
+  echo 'JELOU ................'
 }
