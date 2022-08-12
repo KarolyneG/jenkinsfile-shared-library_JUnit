@@ -5,10 +5,13 @@
 //} 
 
 def call() {
+node {
+    
     def msg = sh (
         returnStdout: true,
         script: "echo Hello"
     )
     msg += " World"
     return msg
+}
 }
