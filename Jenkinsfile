@@ -1,5 +1,10 @@
 @Library('jenkinsfile-shared-library_JUnit')_
-stage('POC_PruebasUnitarias') {
+stage('SayHello') {
 echo 'Hello world'
 helloMundo()
+}
+
+stage("PU_SPOCK") {
+
+             sh "mvn clean test"
 }
