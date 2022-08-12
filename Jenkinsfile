@@ -6,6 +6,7 @@ helloMundo()
 
 stage("Test") {
 
-  // sh "mvn clean test"
-  echo 'JELOU ................'
+ 
+ sh "mvn clean test"
+ 
 }
