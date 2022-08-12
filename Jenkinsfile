@@ -1,5 +1,5 @@
 @Library('jenkinsfile-shared-library_JUnit')_
-stage('Demo') {
+stage('POC_PruebasUnitarias') {
 echo 'Hello world'
 helloMundo()
 }
