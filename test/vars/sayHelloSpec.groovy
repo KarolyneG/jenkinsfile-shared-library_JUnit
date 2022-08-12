@@ -2,18 +2,18 @@ import com.homeaway.devtools.jenkins.testing.JenkinsPipelineSpecification
 
 public class sayHelloSpec extends JenkinsPipelineSpecification {
 
-    def "sayHello returns expected value" () {
-        def sayHello = null
+    def "helloMundo returns expected value" () {
+        def helloMundo = null
 
         setup:
-            sayHello = loadPipelineScriptForTest("vars/sayHello.groovy")
+            helloMundo = loadPipelineScriptForTest("vars/helloMundo.groovy")
             // Stub the sh step to return Hello
             getPipelineMock("sh")(_) >> {
                 return "Hello"
             }
 
         when:
-            def msg = sayHello()
+            def msg = helloMundo()
 
         then:
             msg == "Hello World"
