@@ -1,6 +1,7 @@
 @Library('jenkinsfile-shared-library_JUnit')_
 stage('SayHello') {
-echo 'Hello world'
+//echo 'Hello world'
+  echo 'Jenkinsfile'
 helloMundo()
 }
 
